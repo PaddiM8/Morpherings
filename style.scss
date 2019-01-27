@@ -1,0 +1,164 @@
+$input-width: 305px;
+$input-height: 35px;
+$input-margin: 4px;
+$background-color: #22A7F0;
+
+body {
+   background-color: $background-color;
+}
+
+#registerForm {
+   width: $input-width;
+   height: 300px;
+   margin-top: 30px;
+   position: relative;
+   color: white;
+   font-family: Arial;
+}
+
+.input {
+   width: $input-width;
+   height: $input-height;
+   margin: $input-margin 0px;
+   padding: 5px 7px;
+
+   color: #7C8A99;
+   background-color: white;
+   border: 0px solid #9CAAB9;
+   border-bottom-width: 2px;
+   border-right-width: 2px;
+   border-radius: 7px;
+
+   transition: .325s all ease;
+}
+
+
+.password {
+  margin-top: ($input-height + $input-margin) * -1; 
+  display: none;
+}
+
+.button {
+   margin-top: -15;
+   display: none;
+}
+
+.fake-button {
+   margin-top: $input-margin;
+   text-align: center;
+   cursor: pointer;
+   float: left;
+   display: block;
+   margin-left: 50%;
+   transform: translateX(-50%);
+}
+
+.email {
+   margin-left: calc(50% + -1px);
+   transform: translateX(-50%);
+   z-index: 100;
+   position: relative;
+}
+
+.password-anim {
+   animation: move-password-box 0.35s ease-in-out;
+   animation-fill-mode: forwards;
+   animation-delay: 0.3s;
+   display: block;
+   opacity: 0;
+   z-index: 25;
+}
+
+.button-anim {
+   animation: move-button 0.25s ease-in-out;
+   animation-fill-mode: forwards;
+   animation-delay: 0.7s;
+   display: block;
+   opacity: 0;
+   z-index: 20;
+}
+
+.password-anim-reverse {
+   animation: move-password-box-reverse 0.35s ease-in-out;
+   animation-fill-mode: forwards;
+}
+
+.button-anim-reverse {
+   animation: move-button-reverse 0.25s ease-in-out;
+   animation-fill-mode: forwards;
+}
+
+.email-revert {
+   animation: revert-email-box 1.525s ease-in-out;
+   animation-fill-mode: forwards;
+   animation-delay: 0.3s;
+   color: white;
+}
+
+.button {
+   width: 140px;
+   height: $input-height;
+
+   background-color: #1EBC61;
+   color: white;
+
+   border: 0px solid #009C41;
+   border-bottom-width: 2px;
+   border-right-width: 2px;
+   border-radius: 10px;
+   float: right;
+}
+
+@keyframes move-password-box {
+   from { transform: translateY(($input-height + $input-margin) * 0); opacity: 1; }
+   to { transform: translateY($input-height + $input-margin * 2); opacity: 1; }
+}
+
+@keyframes move-button {
+   from { transform: translateY(($input-height + $input-margin) * 0); opacity: 1; }
+   to { transform: translateY($input-height + $input-margin * 2); opacity: 1; }
+}
+
+@keyframes move-password-box-reverse {
+   to { transform: translateY(($input-height + $input-margin) * 0); opacity: 0; }
+   99% { opacity: 1; }
+   from { transform: translateY($input-height + $input-margin * 2); opacity: 1; }
+}
+
+@keyframes move-button-reverse {
+   to { transform: translateY(($input-height + $input-margin + 4px) * -1); opacity: 0 };
+   99% { opacity: 1; }
+   from { transform: translateY($input-height + $input-margin * 2); opacity: 1; }
+}
+
+@keyframes revert-email-box {
+   0% { width: $input-width; background-color: white; font-align: left; }
+   20% {
+      width: 42px;
+      height: 42px;
+      border: 0;
+
+      color: #1EBC61;
+      background-image: url('Loading.gif');
+      background-color: transparent;
+      background-repeat: no-repeat;
+   }
+   99% {
+      width: 42px;
+      height: 42px;
+      border: 0;
+
+      color: #1EBC61;
+      background-image: url('Loading.gif');
+      background-color: transparent;
+      background-repeat: no-repeat;
+   }
+
+   100% {
+      background-image: none;
+      background-color: transparent;
+      border: 0;
+      width: $input-width;
+      color: white;
+   }
+}

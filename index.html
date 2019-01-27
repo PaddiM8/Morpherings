@@ -1,29 +1,16 @@
-<!DOCTYPE html>
-
 <html>
-	<head>
-		<title>Paddis Transitions</title>
-		<link type="text/css" rel="stylesheet" href="Paddis-Transitions/Transitions-with-UI.css"> <!-- REQUIRED (UI is optional) -->
-		<link type="text/css" rel="stylesheet" href="Paddis-Transitions/Config.css"> <!-- REQUIRED -->
-		<link type="text/css" rel="stylesheet" href="Style/Main.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- REQUIRED -->
-		<script src="Paddis-Transitions/TransitionController.js"></script> <!-- REQUIRED -->
-		<script src="Scripts/Trigger.js"></script>
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="buttonArea">
-				<div id="form">
-					<button class="button registerButton">Register</button>
-					<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
-					
-					<input type="text" class="button textBox usernameTextBox" value="Choose a Username..." /><br />
-					<input type="password" class="button textBox passwordTextBox" value="Password" /><br />
-					<button class="button submitButton">Create Account</button>
-				</div>
-				
-			</div>
-		</div>
-		
-	</body>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <div id="registerForm">
+         <form>
+            <input type="email" id="email" class="fake-button button" value="Register" readonly="true" onclick="registerClick()" /><br />
+            <input type="password" id="password" class="password input" placeholder="Password..." /><br />
+            <input type="button" id="submit" class="button" value="Register" onclick="submitForm()" />
+         </form>
+      </div>
+
+      <script src="transition.js"></script>
+   </body>
 </html>
