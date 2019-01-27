@@ -31,10 +31,13 @@ body {
   display: none;
 }
 
+input {
+  box-shadow: none;
+}
+
 .button {
   margin-top: -15;
   display: none;
-  outline: 0;
 }
 
 .fake-button {
