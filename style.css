@@ -1,11 +1,11 @@
 body {
-  background-color: #22A7F0;
+  background-color: #303F9F;
 }
 
 #registerForm {
   width: 305px;
   height: 300px;
-  margin-top: 30px;
+  margin: 70px;
   position: relative;
   color: white;
   font-family: Arial;
@@ -90,13 +90,18 @@ body {
 .button {
   width: 140px;
   height: 35px;
-  background-color: #1EBC61;
+  background-color: #388E3C;
   color: white;
-  border: 0px solid #009C41;
+  border: 0px solid #2E7D32;
   border-bottom-width: 2px;
   border-right-width: 2px;
   border-radius: 10px;
   float: right;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2E7D32;
 }
 
 @keyframes move-password-box {

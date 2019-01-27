@@ -1,7 +1,7 @@
 $input-width: 305px;
 $input-height: 35px;
 $input-margin: 4px;
-$background-color: #22A7F0;
+$background-color: #303F9F;
 
 body {
    background-color: $background-color;
@@ -10,7 +10,7 @@ body {
 #registerForm {
    width: $input-width;
    height: 300px;
-   margin-top: 30px;
+   margin: 70px;
    position: relative;
    color: white;
    font-family: Arial;
@@ -99,36 +99,65 @@ body {
    width: 140px;
    height: $input-height;
 
-   background-color: #1EBC61;
+   background-color: #388E3C;
    color: white;
 
-   border: 0px solid #009C41;
+   border: 0px solid #2E7D32;
    border-bottom-width: 2px;
    border-right-width: 2px;
    border-radius: 10px;
    float: right;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: #2E7D32;
 }
 
 @keyframes move-password-box {
-   from { transform: translateY(($input-height + $input-margin) * 0); opacity: 1; }
-   to { transform: translateY($input-height + $input-margin * 2); opacity: 1; }
+   from {
+      transform: translateY(($input-height + $input-margin) * 0);
+      opacity: 1;
+   }
+   to {
+      transform: translateY($input-height + $input-margin * 2);
+      opacity: 1;
+   }
 }
 
 @keyframes move-button {
-   from { transform: translateY(($input-height + $input-margin) * 0); opacity: 1; }
-   to { transform: translateY($input-height + $input-margin * 2); opacity: 1; }
+   from {
+      transform: translateY(($input-height + $input-margin) * 0);
+      opacity: 1;
+   }
+   to {
+      transform: translateY($input-height + $input-margin * 2);
+      opacity: 1;
+   }
 }
 
 @keyframes move-password-box-reverse {
-   to { transform: translateY(($input-height + $input-margin) * 0); opacity: 0; }
+   to {
+      transform: translateY(($input-height + $input-margin) * 0);
+      opacity: 0;
+   }
    99% { opacity: 1; }
-   from { transform: translateY($input-height + $input-margin * 2); opacity: 1; }
+   from {
+      transform: translateY($input-height + $input-margin * 2);
+      opacity: 1;
+   }
 }
 
 @keyframes move-button-reverse {
-   to { transform: translateY(($input-height + $input-margin + 4px) * -1); opacity: 0 };
+   to {
+      transform: translateY(($input-height + $input-margin + 4px) * -1);
+      opacity: 0;
+   }
    99% { opacity: 1; }
-   from { transform: translateY($input-height + $input-margin * 2); opacity: 1; }
+   from {
+      transform: translateY($input-height + $input-margin * 2);
+      opacity: 1;
+   }
 }
 
 @keyframes revert-email-box {
