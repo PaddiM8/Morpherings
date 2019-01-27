@@ -39,6 +39,10 @@ body {
   display: none;
 }
 
+input:required {
+   box-shadow: none;
+}
+
 .button {
    margin-top: -15;
    display: none;
