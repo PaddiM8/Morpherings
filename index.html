@@ -3,14 +3,13 @@
       <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
-      <div id="registerForm">
+     <div id="registerForm">
          <form>
-            <input type="email" id="email" class="fake-button button" value="Register" readonly="true" onclick="registerClick()" /><br />
-            <input type="password" id="password" class="password input" placeholder="Password..." /><br />
-            <input type="button" id="submit" class="button" value="Register" onclick="submitForm()" />
+            <input type="button" id="email" class="fake-button button" value="Register" readonly="true" role="button" aria-label="register" onclick="registerClick()" /><br />
+            <input type="password" id="password" class="password input" aria-hidden="true" role="textbox" aria-label="password" placeholder="Password..." /><br />
+            <input type="button" id="submit" class="button" value="Register" aria-hidden="true" aria-label="submit" onclick="submitForm()" />
          </form>
       </div>
-
       <script src="transition.js"></script>
    </body>
 </html>

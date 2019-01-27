@@ -121,7 +121,7 @@ input {
 
 @keyframes move-password-box {
    from {
-      transform: translateY(($input-height + $input-margin) * 0);
+      transform: translateY(0);
       opacity: 1;
    }
    to {
@@ -132,7 +132,7 @@ input {
 
 @keyframes move-button {
    from {
-      transform: translateY(($input-height + $input-margin) * 0);
+      transform: translateY(0);
       opacity: 1;
    }
    to {
@@ -143,7 +143,7 @@ input {
 
 @keyframes move-password-box-reverse {
    to {
-      transform: translateY(($input-height + $input-margin) * 0);
+      transform: translateY(0);
       opacity: 0;
    }
    99% { opacity: 1; }
@@ -157,6 +157,10 @@ input {
    to {
       transform: translateY(($input-height + $input-margin + 4px) * -1);
       opacity: 0;
+   }
+   20% {
+      transform: translateY(($input-height + $input-margin + 4px) * -1);
+      opacity: 0; 
    }
    99% { opacity: 1; }
    from {

@@ -8,6 +8,13 @@ function registerClick() {
    emailbox.value = "";
    emailbox.readOnly = false;
 
+   // Accessibility
+   emailbox.setAttribute("role", "textbox");
+   emailbox.type = "email";
+   emailbox.setAttribute("aria-label", "enter email address");
+   passwordbox.setAttribute("aria-hidden", "false");
+   button.setAttribute("aria-hidden", "false");
+
    passwordbox.className += " password-anim";
    button.className += " button-anim";
 }
@@ -24,6 +31,7 @@ function submitForm() {
 
       var registerForm = document.getElementById("registerForm");
       registerForm.innerHTML = "Account created. Check your email."
+      registerForm.setAttribute("aria-live", "assertive");
       registerForm.fontAlign = "center";
    }, 1525)
 }
