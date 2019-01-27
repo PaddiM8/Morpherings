@@ -22,6 +22,7 @@ body {
   border-bottom-width: 2px;
   border-right-width: 2px;
   border-radius: 7px;
+  outline: 0;
   transition: 0.325s all ease;
 }
 
@@ -33,6 +34,7 @@ body {
 .button {
   margin-top: -15;
   display: none;
+  outline: 0;
 }
 
 .fake-button {
