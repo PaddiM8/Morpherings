@@ -6,8 +6,7 @@ Having accessible forms is important. Therefore, I have done my best to make the
 ## GIFs
 
 ### Animation 1
-![](https://media.giphy.com/media/xT9IgDbKxTG8vb3u7u/giphy.gif)
-![](https://i.imgur.com/KHj7YV9.gif)
+![](https://i.imgur.com/iHLrJNG.gif)
 
 ### Animation 2
 ![](https://i.imgur.com/WWdKfdX.gif)
