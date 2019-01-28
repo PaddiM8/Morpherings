@@ -24,9 +24,8 @@ body {
   border-right-width: 2px;
   border-radius: 7px;
   outline: 0;
-  transition: 0.325s all ease;
+  transition: 0.425s all ease;
   display: inline;
-  transition: 0.3s ease all;
 }
 
 .button {
