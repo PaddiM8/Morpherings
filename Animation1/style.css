@@ -86,7 +86,7 @@ input {
 }
 
 .email-revert {
-  animation: revert-email-box 1.525s ease-in-out;
+  animation: revert-email-box 3s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
   color: white;
@@ -165,14 +165,19 @@ input {
     background-color: white;
     font-align: left;
   }
-  20% {
+  10% {
     width: 42px;
     height: 42px;
     border: 0;
     color: #1EBC61;
     background-image: url("Loading.gif");
-    background-color: transparent;
+    background-color: #424242;
+    opacity: 0.7;
+    border-radius: 100px;
     background-repeat: no-repeat;
+  }
+  21% {
+    background-color: transparent;
   }
   99% {
     width: 42px;

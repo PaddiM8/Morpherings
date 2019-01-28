@@ -1,0 +1,112 @@
+body {
+  background-color: #303F9F;
+}
+
+#loginForm {
+  width: 569px;
+  height: 35px;
+  position: relative;
+  color: white;
+  font-family: Arial;
+  float: right;
+}
+
+.input {
+  width: 220px;
+  height: 35px;
+  margin: 4px 0px;
+  margin-left: 5px;
+  padding: 5px 7px;
+  color: #7C8A99;
+  background-color: white;
+  border: 0px solid #9CAAB9;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-radius: 7px;
+  outline: 0;
+  transition: 0.325s all ease;
+  display: inline;
+  transition: 0.3s ease all;
+}
+
+.button {
+  width: 105px;
+  height: 35px;
+  margin-top: 4px;
+  margin-left: 8px;
+  background-color: #388E3C;
+  color: white;
+  border: 0px solid #2E7D32;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+}
+
+.button:hover {
+  background-color: #2E7D32;
+}
+
+.fake-button {
+  background-color: #2E7D32;
+  position: relative;
+  z-index: 5;
+}
+
+#loginButton {
+  margin-left: -109px;
+}
+
+.fake-button.right {
+  width: 47.5px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left: 0;
+  margin-left: 0;
+  text-align: left;
+  padding: 0;
+}
+
+.fake-button.left {
+  width: 57.5px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right: 0;
+  margin-right: 0;
+  text-align: right;
+  padding: 0;
+}
+
+.loginInput {
+  float: right;
+  position: relative;
+  z-index: 5;
+}
+
+.loginButton-anim {
+  animation: login-button-anim 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+  z-index: 0;
+  opacity: 0;
+  margin-left: -109px;
+}
+
+@keyframes login-button-anim {
+  from {
+    opacity: 0;
+    margin-left: -105px;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    margin-left: 4px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,117 @@
+$input-width: 220px;
+$input-height: 35px;
+$input-margin: 4px;
+$button-width: 105px;
+$button-hover-color: #2E7D32;
+$background-color: #303F9F;
+
+body {
+   background-color: $background-color;
+}
+
+#loginForm {
+   width: $input-width * 2 + $input-margin + 125px;
+   height: $input-height;
+   position: relative;
+   color: white;
+   font-family: Arial;
+   float: right;
+}
+
+.input {
+   width: $input-width;
+   height: $input-height;
+   margin: $input-margin 0px;
+   margin-left: 5px;
+   padding: 5px 7px;
+
+   color: #7C8A99;
+   background-color: white;
+   border: 0px solid #9CAAB9;
+   border-bottom-width: 2px;
+   border-right-width: 2px;
+   border-radius: 7px;
+
+   outline: 0;
+   transition: .325s all ease;
+   display: inline;
+
+   transition: 0.3s ease all;
+}
+
+
+.button {
+   width: $button-width;
+   height: $input-height;
+   margin-top: $input-margin;
+   margin-left: 8px;
+
+   background-color: #388E3C;
+   color: white;
+
+   border: 0px solid #2E7D32;
+   border-bottom-width: 2px;
+   border-right-width: 2px;
+   border-radius: 10px;
+   float: right;
+   cursor: pointer;
+
+   position: relative;
+   z-index: 20;
+}
+
+.button:hover {
+   background-color: $button-hover-color;
+}
+
+.fake-button {
+   background-color: $button-hover-color;
+   position: relative;
+   z-index: 5;
+}
+
+#loginButton {
+   margin-left: ($button-width + $input-margin) * -1;
+}
+
+.fake-button.right {
+   width: $button-width / 2 - 5px;
+   border-bottom-left-radius: 0;
+   border-top-left-radius: 0;
+   border-left: 0;
+   margin-left: 0;
+   text-align: left;
+   padding: 0;
+} 
+
+.fake-button.left {
+   width: $button-width / 2 + 5px;
+   border-bottom-right-radius: 0;
+   border-top-right-radius: 0;
+   border-right: 0;
+   margin-right: 0;
+   text-align: right;
+   padding: 0;
+}
+
+.loginInput {
+   float: right;
+   position: relative;
+   z-index: 5;
+}
+
+.loginButton-anim {
+   animation: login-button-anim 0.5s;
+   animation-fill-mode: forwards;
+   animation-delay: 0.3s;
+
+   z-index: 0;
+   opacity: 0;
+   margin-left: ($button-width + $input-margin) * -1;
+}
+
+@keyframes login-button-anim {
+   from { opacity: 0; margin-left: ($button-width) *-1; }
+   1%   { opacity: 1; }
+   to   { opacity: 1; margin-left: $input-margin; }
+}
