@@ -8,4 +8,4 @@ CSS3 Animations that causes buttons to morph into forms. A few lines of javascri
 ![](https://i.imgur.com/KHj7YV9.gif)
 
 ### Animation 2
-![](https://i.imgur.com/Eq15Uw8.gif)
+![](https://i.imgur.com/WWdKfdX.gif)

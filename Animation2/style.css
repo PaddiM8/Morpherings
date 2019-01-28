@@ -88,7 +88,7 @@ body {
 .loginButton-anim {
   animation: login-button-anim 0.5s;
   animation-fill-mode: forwards;
-  animation-delay: 0.3s;
+  animation-delay: 0.425s;
   z-index: 0;
   opacity: 0;
   margin-left: -109px;
