@@ -26,6 +26,11 @@ function submitForm() {
    emailbox.placeholder = "";
    emailbox.value = "";
 
+   var loadingCircles = document.getElementById("loadingCircles");
+   setTimeout(function() {
+      loadingCircles.style.display = "block"
+   }, 620)
+
    setTimeout(function() {
       emailbox.value = "Register";
 
@@ -33,5 +38,5 @@ function submitForm() {
       registerForm.innerHTML = "Account created. Check your email."
       registerForm.setAttribute("aria-live", "assertive");
       registerForm.fontAlign = "center";
-   }, 1525)
+   }, 2620);
 }

@@ -86,10 +86,11 @@ input {
 }
 
 .email-revert {
-  animation: revert-email-box 3s ease-in-out;
+  animation: revert-email-box 0.4s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
-  color: white;
+  background-color: #ffffff;
+  border: 0;
 }
 
 .button {
@@ -162,38 +163,74 @@ input {
 @keyframes revert-email-box {
   0% {
     width: 305px;
-    background-color: white;
-    font-align: left;
-  }
-  10% {
-    width: 42px;
-    height: 42px;
-    border: 0;
-    color: #1EBC61;
-    background-image: url("Loading.gif");
-    background-color: #424242;
-    opacity: 0.7;
-    border-radius: 100px;
-    background-repeat: no-repeat;
-  }
-  21% {
-    background-color: transparent;
-  }
-  99% {
-    width: 42px;
-    height: 42px;
-    border: 0;
-    color: #1EBC61;
-    background-image: url("Loading.gif");
-    background-color: transparent;
-    background-repeat: no-repeat;
+    background-color: #ffffff;
   }
   100% {
-    background-image: none;
-    background-color: transparent;
-    border: 0;
-    width: 305px;
-    color: white;
+    width: 30px;
+    opacity: 0;
+    border-radius: 100px;
+    background-color: #000000;
+  }
+}
+/* Loading Circle */
+.loadingCircle {
+  position: absolute;
+  background-color: black;
+  border-radius: 180px;
+}
+
+#loadingCircles {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 4px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#loadingCircle1 {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 180px;
+  opacity: 0.5;
+  animation: loading-circle 1.5s;
+  animation-iteration-count: infinite;
+}
+
+#loadingCircle2 {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 180px;
+  opacity: 0.3;
+  top: 5px;
+  left: 5px;
+  animation-iteration-count: infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes loading-circle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.66);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loading-circle2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
