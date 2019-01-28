@@ -5,12 +5,12 @@
    <body>
       <div id="loginForm">
          <form>
-            <input type="button" name="submit" value="Login" class="button"
-                   id="loginButton" onclick="showLoginForm()" />
-            <input type="text" name="password" placeholder="Password..."
-                   class="input button fake-button right" value="in" id="loginPassword" />
-            <input type="text" name="email" placeholder="Email Address"
-                   class="input button fake-button left" value="Log" id="loginEmail" />
+            <input type="button" name="submit" value="Login" class="button" role="button"
+                   id="loginButton" onclick="showLoginForm()" aria-label="login" />
+            <input type="text" name="password" placeholder="Password..." aria-label="password" role="textbox"
+                   class="input button fake-button right" value="in" id="loginPassword" aria-hidden="true" />
+            <input type="text" name="email" placeholder="Email Address" ariad-label="email" role="textbox"
+                   class="input button fake-button left" value="Log" id="loginEmail" aria-hidden="true" />
         </form>
       </div>
       <script src="transition.js"></script>
