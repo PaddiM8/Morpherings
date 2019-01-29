@@ -11,4 +11,6 @@ function showLoginForm() {
 
    loginButton.className += " loginButton-anim";
    loginButton.blur();
+   loginEmail.setAttribute("aria-hidden", "false");
+   loginPassword.setAttribute("aria-hidden", "false");
 }
