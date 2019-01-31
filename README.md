@@ -1,4 +1,4 @@
-# Paddis-Transitions
+# Morpherings
 CSS3 Animations that causes buttons to morph into forms. A few lines of javascript is used for triggering. This is mostly a personal project I made for fun, but I can imagine it being useful in some situations. For example if you don't want to redirect the user to another page to sign up. Depending on your website layout it could be a bit too verbose to have a extensive form in the middle of the webiste, with these animations the form appears only when you want it to. Which allows you to have a less cluttered page. A smooth animation is quicker than loading a new page. 
 
 ## Accessibility
