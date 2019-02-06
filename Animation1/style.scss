@@ -14,6 +14,7 @@ body {
    position: relative;
    color: white;
    font-family: Arial;
+   text-align: center;
 }
 
 .input {
@@ -249,4 +250,18 @@ input {
    100% {
       transform: scale(1.0);
    }
+}
+
+.check {
+   width: 20px;
+   height: 20px;
+   margin-top: 10px;
+}
+
+.resultText {
+   opacity: 0;
+   transition: .3s ease opacity;
+}
+.showText {
+   opacity: 1;
 }

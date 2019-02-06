@@ -1,6 +1,5 @@
 body {
-  background-color: #303F9F;
-}
+  background-color: #303F9F; }
 
 #registerForm {
   width: 305px;
@@ -9,7 +8,7 @@ body {
   position: relative;
   color: white;
   font-family: Arial;
-}
+  text-align: center; }
 
 .input {
   width: 305px;
@@ -23,22 +22,18 @@ body {
   border-right-width: 2px;
   border-radius: 7px;
   outline: 0;
-  transition: 0.325s all ease;
-}
+  transition: .325s all ease; }
 
 .password {
   margin-top: -39px;
-  display: none;
-}
+  display: none; }
 
 input {
-  box-shadow: none;
-}
+  box-shadow: none; }
 
 .button {
   margin-top: -15;
-  display: none;
-}
+  display: none; }
 
 .fake-button {
   margin-top: 4px;
@@ -47,15 +42,13 @@ input {
   float: left;
   display: block;
   margin-left: 50%;
-  transform: translateX(-50%);
-}
+  transform: translateX(-50%); }
 
 .email {
   margin-left: calc(50% + -1px);
   transform: translateX(-50%);
   z-index: 100;
-  position: relative;
-}
+  position: relative; }
 
 .password-anim {
   animation: move-password-box 0.35s ease-in-out;
@@ -63,8 +56,7 @@ input {
   animation-delay: 0.3s;
   display: block;
   opacity: 0;
-  z-index: 25;
-}
+  z-index: 25; }
 
 .button-anim {
   animation: move-button 0.25s ease-in-out;
@@ -72,26 +64,22 @@ input {
   animation-delay: 0.7s;
   display: block;
   opacity: 0;
-  z-index: 20;
-}
+  z-index: 20; }
 
 .password-anim-reverse {
   animation: move-password-box-reverse 0.35s ease-in-out;
-  animation-fill-mode: forwards;
-}
+  animation-fill-mode: forwards; }
 
 .button-anim-reverse {
   animation: move-button-reverse 0.25s ease-in-out;
-  animation-fill-mode: forwards;
-}
+  animation-fill-mode: forwards; }
 
 .email-revert {
   animation: revert-email-box 0.4s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
   background-color: #ffffff;
-  border: 0;
-}
+  border: 0; }
 
 .button {
   width: 140px;
@@ -103,81 +91,60 @@ input {
   border-right-width: 2px;
   border-radius: 10px;
   float: right;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .button:hover {
-  background-color: #2E7D32;
-}
+  background-color: #2E7D32; }
 
 @keyframes move-password-box {
   from {
     transform: translateY(0);
-    opacity: 1;
-  }
+    opacity: 1; }
   to {
     transform: translateY(43px);
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 @keyframes move-button {
   from {
     transform: translateY(0);
-    opacity: 1;
-  }
+    opacity: 1; }
   to {
     transform: translateY(43px);
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 @keyframes move-password-box-reverse {
   to {
     transform: translateY(0);
-    opacity: 0;
-  }
+    opacity: 0; }
   99% {
-    opacity: 1;
-  }
+    opacity: 1; }
   from {
     transform: translateY(43px);
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 @keyframes move-button-reverse {
   to {
     transform: translateY(-43px);
-    opacity: 0;
-  }
+    opacity: 0; }
   20% {
     transform: translateY(-43px);
-    opacity: 0;
-  }
+    opacity: 0; }
   99% {
-    opacity: 1;
-  }
+    opacity: 1; }
   from {
     transform: translateY(43px);
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 @keyframes revert-email-box {
   0% {
     width: 305px;
-    background-color: #ffffff;
-  }
+    background-color: #ffffff; }
   100% {
     width: 30px;
     opacity: 0;
     border-radius: 100px;
-    background-color: #000000;
-  }
-}
+    background-color: #000000; } }
 /* Loading Circle */
 .loadingCircle {
   position: absolute;
   background-color: black;
-  border-radius: 180px;
-}
+  border-radius: 180px; }
 
 #loadingCircles {
   display: none;
@@ -186,8 +153,7 @@ input {
   height: 30px;
   top: 4px;
   margin-left: 50%;
-  transform: translateX(-50%);
-}
+  transform: translateX(-50%); }
 
 #loadingCircle1 {
   width: 30px;
@@ -196,8 +162,7 @@ input {
   border-radius: 180px;
   opacity: 0.5;
   animation: loading-circle 1.5s;
-  animation-iteration-count: infinite;
-}
+  animation-iteration-count: infinite; }
 
 #loadingCircle2 {
   width: 20px;
@@ -208,30 +173,28 @@ input {
   top: 5px;
   left: 5px;
   animation-iteration-count: infinite;
-  animation-delay: 0.75s;
-}
+  animation-delay: 0.75s; }
 
 @keyframes loading-circle {
   0% {
-    transform: scale(1);
-  }
+    transform: scale(1); }
   50% {
-    transform: scale(0.66);
-  }
+    transform: scale(0.66); }
   100% {
-    transform: scale(1);
-  }
-}
+    transform: scale(1); } }
 @keyframes loading-circle2 {
   0% {
-    transform: scale(1);
-  }
+    transform: scale(1); }
   50% {
-    transform: scale(0);
-  }
+    transform: scale(0); }
   100% {
-    transform: scale(1);
-  }
-}
+    transform: scale(1); } }
+.check {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px; }
+
+.result {
+  transition: .3s ease opacity; }
 
 /*# sourceMappingURL=style.css.map */

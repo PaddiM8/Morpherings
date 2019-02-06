@@ -35,8 +35,10 @@ function submitForm() {
       emailbox.value = "Register";
 
       var registerForm = document.getElementById("registerForm");
-      registerForm.innerHTML = "Account created. Check your email."
+      registerForm.innerHTML = "<img class='check' src='check.svg' /><br /><p id='resultText' class='resultText'>Account created. Check your email.</p>"
       registerForm.setAttribute("aria-live", "assertive");
       registerForm.fontAlign = "center";
+
+      document.getElementById("resultText").className += " showText";
    }, 2620);
 }
