@@ -9,13 +9,15 @@ body {
    background-color: $background-color;
 }
 
+form {
+   display: flex;
+   justify-content: flex-end;
+}
+
 #loginForm {
-   width: $input-width * 2 + $input-margin + 125px;
-   height: $input-height;
    position: relative;
    color: white;
    font-family: Arial;
-   float: right;
 }
 
 .input {
@@ -34,7 +36,7 @@ body {
 
    outline: 0;
    transition: .425s all ease;
-   display: inline;
+   display: inline-block;
 }
 
 
@@ -51,14 +53,14 @@ body {
    border-bottom-width: 2px;
    border-right-width: 2px;
    border-radius: 10px;
-   float: right;
    cursor: pointer;
 
    position: relative;
    z-index: 20;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
    background-color: $button-hover-color;
 }
 
@@ -69,21 +71,21 @@ body {
 }
 
 #loginButton {
-   margin-left: ($button-width + $input-margin) * -1;
+   margin-left: $button-width * -1;
 }
 
 .fake-button.right {
-   width: $button-width / 2 - 5px;
+   width: $button-width / 2;
    border-bottom-left-radius: 0;
    border-top-left-radius: 0;
    border-left: 0;
    margin-left: 0;
    text-align: left;
    padding: 0;
-} 
+}
 
 .fake-button.left {
-   width: $button-width / 2 + 5px;
+   width: $button-width / 2;
    border-bottom-right-radius: 0;
    border-top-right-radius: 0;
    border-right: 0;
@@ -93,9 +95,12 @@ body {
 }
 
 .loginInput {
-   float: right;
    position: relative;
    z-index: 5;
+}
+
+.loginInput:focus {
+   box-shadow: 0 0 1px 2px #66d9ef;
 }
 
 .loginButton-anim {

@@ -2,13 +2,15 @@ body {
   background-color: #303F9F;
 }
 
+form {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #loginForm {
-  width: 569px;
-  height: 35px;
   position: relative;
   color: white;
   font-family: Arial;
-  float: right;
 }
 
 .input {
@@ -24,8 +26,8 @@ body {
   border-right-width: 2px;
   border-radius: 7px;
   outline: 0;
-  transition: 0.425s all ease;
-  display: inline;
+  transition: .425s all ease;
+  display: inline-block;
 }
 
 .button {
@@ -39,13 +41,13 @@ body {
   border-bottom-width: 2px;
   border-right-width: 2px;
   border-radius: 10px;
-  float: right;
   cursor: pointer;
   position: relative;
   z-index: 20;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #2E7D32;
 }
 
@@ -56,11 +58,11 @@ body {
 }
 
 #loginButton {
-  margin-left: -109px;
+  margin-left: -105px;
 }
 
 .fake-button.right {
-  width: 47.5px;
+  width: 52.5px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border-left: 0;
@@ -70,7 +72,7 @@ body {
 }
 
 .fake-button.left {
-  width: 57.5px;
+  width: 52.5px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   border-right: 0;
@@ -80,9 +82,12 @@ body {
 }
 
 .loginInput {
-  float: right;
   position: relative;
   z-index: 5;
+}
+
+.loginInput:focus {
+  box-shadow: 0 0 1px 2px #66d9ef;
 }
 
 .loginButton-anim {
@@ -107,5 +112,7 @@ body {
     margin-left: 4px;
   }
 }
+
+
 
 /*# sourceMappingURL=style.css.map */

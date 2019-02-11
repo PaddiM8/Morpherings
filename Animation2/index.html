@@ -1,16 +1,19 @@
-<html>
+<html lang="en">
    <head>
+      <meta charset="utf-8">
+      <title>Morpherings Example 2</title>
       <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
       <div id="loginForm">
          <form>
-            <input type="button" name="submit" value="Login" class="button" role="button"
-                   id="loginButton" onclick="showLoginForm()" aria-label="login" />
-            <input type="text" name="password" placeholder="Password..." aria-label="password"
-                   class="input button fake-button right" value="in" id="loginPassword" aria-hidden="true" />
-            <input type="text" name="email" placeholder="Email Address" ariad-label="email"
-                   class="input button fake-button left" value="Log" id="loginEmail" aria-hidden="true" />
+            <input type="email" name="email" placeholder="Email Address" ariad-label="email"
+                   class="input button fake-button left" id="loginEmail" aria-hidden="true" tabindex="-1" />
+            <input type="password" name="password" placeholder="Password..." aria-label="password"
+                   class="input button fake-button right" id="loginPassword" aria-hidden="true" tabindex="-1" />
+
+            <input type="button" name="submit" value="Login" class="button"
+                   id="loginButton" onclick="showLoginForm()" />
         </form>
       </div>
       <script src="transition.js"></script>
